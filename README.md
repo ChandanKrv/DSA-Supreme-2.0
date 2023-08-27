@@ -1,2 +1,2 @@
 # DSA-Supreme
-This repository contain codes of DSA SUPREME 2.0 batch
+This repository contains codes from the DSA SUPREME 2.0 batch.
