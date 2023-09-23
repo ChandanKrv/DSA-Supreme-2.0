@@ -1,25 +1,20 @@
 #include <iostream> // Created by @ChandanKrV on 23 Sep, 2023.
 using namespace std;
 /* PROBLEM:
-Hollow Inverted Half Pyramid:
-    ********
-    *     *
-    *    *
-    *   *
-    *  *
-    * *
-    **
-    *
+Full Pyramid:
+
 */
+
 int main()
 {
-    int n = 8;
+    int n = 6;
+
     for (int i = 1; i <= n; i++)
     {
-        for (int j = 1; j <= n; j++)
+        for (int j = 1; j <= n * 2; j++)
         {
-            if ((i == 1) or (j == 1) or (j == n + 1 - i))
-                cout << "*";
+            if (j >= n + 1 - i and j <= n - 1 + i)
+                cout << "* ";
             else
                 cout << " ";
         }
