@@ -2,12 +2,12 @@
 using namespace std;
 /* PROBLEM:
 Hollow Rectangle:
-    * * * * * *
-    *         *
-    *         *
-    *         *
-    *         *
-    * * * * * *
+* * * * * * 
+*         *
+*         *
+*         *
+*         *
+* * * * * *
 */
 
 int main()

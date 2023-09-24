@@ -2,14 +2,14 @@
 using namespace std;
 /* PROBLEM:
 Hollow Inverted Half Pyramid:
-    ********
-    *     *
-    *    *
-    *   *
-    *  *
-    * *
-    **
-    *
+********
+*     *
+*    *
+*   *
+*  *
+* *
+**
+*
 */
 int main()
 {

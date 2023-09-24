@@ -2,12 +2,12 @@
 using namespace std;
 /* PROBLEM:
 Inverted Half Pyramid:
-    ******
-    *****
-    ****
-    ***
-    **
-    *
+******
+*****
+****
+***
+**
+*
 */
 int main()
 {
