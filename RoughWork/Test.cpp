@@ -5,7 +5,9 @@ using namespace std;
 */
 int main()
 {
-    cout << "HEllo";
+    int n = 8;
+    if (cout << n)
+        cout << "HEllo";
     return 0;
 }
 /* OUTPUT
