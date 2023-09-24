@@ -10,12 +10,12 @@ Debug the code. It is trying to print the given pattern.
 
 int main()
 {
-    int n = 7;
+    int n = 4;
     int i = 1;
-    while (i < n)
+    while (i <= n)
     {
         int j = i, count = 1;
-        while (i <= n)
+        while (count <= i)
         {
             cout << j;
             j = j + 1;
