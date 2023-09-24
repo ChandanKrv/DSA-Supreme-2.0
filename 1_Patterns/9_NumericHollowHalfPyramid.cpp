@@ -1,13 +1,13 @@
 #include <iostream> // Created by @ChandanKrV on 24 Sep, 2023.
 using namespace std;
 /* PROBLEM:
-Half Pyramid (Number Patterns)
+Numeric Hollow Half Pyramid:
 1
-12
-123
-1234
-12345
-123456
+1 2
+1   3
+1     4
+1       5
+1 2 3 4 5 6
 */
 int main()
 {
@@ -16,12 +16,12 @@ int main()
     {
         for (int j = 1; j <= n; j++)
         {
-            if (j <= i)
-                cout << j;
+            if (j == 1 or i == n or j == i)
+                cout << j << " ";
             else
-                cout << " ";
+                cout << "  ";
         }
-        cout << "\n";
+        cout << endl;
     }
     return 0;
 }

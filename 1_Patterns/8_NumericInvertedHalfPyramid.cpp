@@ -1,7 +1,7 @@
 #include <iostream> // Created by @ChandanKrV on 24 Sep, 2023.
 using namespace std;
 /* PROBLEM:
-Inverted Half Pyramid:
+Numeric Inverted Half Pyramid:
 123456
 12345
 1234
