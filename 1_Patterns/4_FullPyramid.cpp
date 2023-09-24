@@ -2,9 +2,15 @@
 using namespace std;
 /* PROBLEM:
 Full Pyramid:
-
+          *
+        * * *
+      * * * * *
+    * * * * * * *
+  * * * * * * * * *
+* * * * * * * * * * *
 */
 
+/*
 int main()
 {
     int n = 6;
@@ -16,7 +22,30 @@ int main()
             if (j >= n + 1 - i and j <= n - 1 + i)
                 cout << "* ";
             else
-                cout << " ";
+                cout << "  ";
+        }
+        cout << "\n";
+    }
+    return 0;
+}
+*/
+
+// OR
+int main()
+{
+    int n = 6;
+    for (int i = 1; i <= n; i++)
+    {
+        // Spaces
+        for (int j = n; j >= i; j--)
+        {
+            cout << " ";
+        }
+
+        // Stars
+        for (int k = 1; k < i; k++)
+        {
+            cout << "* ";
         }
         cout << "\n";
     }
