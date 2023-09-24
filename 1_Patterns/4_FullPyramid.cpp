@@ -37,13 +37,13 @@ int main()
     for (int i = 1; i <= n; i++)
     {
         // Spaces
-        for (int j = n; j >= i; j--)
+        for (int j = n; j > i; j--)
         {
             cout << " ";
         }
 
         // Stars
-        for (int k = 1; k < i; k++)
+        for (int k = 1; k < i + 1; k++)
         {
             cout << "* ";
         }
