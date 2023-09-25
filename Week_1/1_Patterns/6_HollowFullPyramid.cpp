@@ -1,7 +1,13 @@
 #include <iostream> // Created by @ChandanKrV on 24 Sep, 2023.
 using namespace std;
 /* PROBLEM:
-Hollow Full Pyramid
+Hollow Full Pyramid:
+      *
+     * *
+    *   *
+   *     *
+  *       *
+ * * * * * *
 */
 int main()
 {
@@ -14,10 +20,12 @@ int main()
             cout << " ";
         }
         // For Stars
-        for (int j = 1; j <= n - 1 + i; j++)
+        for (int j = 1; j <= i; j++)
         {
-            if (i == 1 or i == n or j == i + 1 or j == n)
-                cout << "*";
+            if (i == 1 or i == n or j == 1 or j == i)
+                cout << "* ";
+            else
+                cout << "  ";
         }
         cout << endl;
     }
