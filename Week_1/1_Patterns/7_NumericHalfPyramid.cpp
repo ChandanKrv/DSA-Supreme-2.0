@@ -2,12 +2,12 @@
 using namespace std;
 /* PROBLEM:
 Numeric Half Pyramid
-1
-12
-123
-1234
-12345
-123456
+1 
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
+1 2 3 4 5 6
 */
 int main()
 {
@@ -17,9 +17,7 @@ int main()
         for (int j = 1; j <= n; j++)
         {
             if (j <= i)
-                cout << j;
-            else
-                cout << " ";
+                cout << j << " ";      
         }
         cout << "\n";
     }

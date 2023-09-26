@@ -2,19 +2,26 @@
 using namespace std;
 /* PROBLEM:
 Numerical Half Pyramid:
-
+1 
+1 2 1
+1 2 3 2 1
+1 2 3 4 3 2 1
+1 2 3 4 5 4 3 2 1
+1 2 3 4 5 6 5 4 3 2 1 
 */
 int main()
 {
-    int n = 6;
+    int n = 6, count;
     for (int i = 1; i <= n; i++)
     {
-        for (int j = 1; j <= n; j++)
+        count = 1;
+        for (int j = 1; j <= i * 2 - 1; j++)
         {
-            if (j <= i)
-                cout << "* ";
+            cout << count << " ";
+            if (j <= i - 1)
+                count++;
             else
-                cout << " ";
+                count--;
         }
         cout << endl;
     }
