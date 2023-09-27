@@ -1,4 +1,2 @@
- if (j <= i - 1)
-                count++;
-            else
-                count--;
+  if (j <= n - i && !k)
+                cout << " $";
