@@ -2,11 +2,20 @@
 using namespace std;
 /* PROBLEM:
 Hollow Diamond:
-
+    *
+   * *
+  *   *
+ *     *
+*       *
+*       *
+ *     *
+  *   *
+   * *
+    *
 */
 int main()
 {
-    int n = 6;
+    int n = 5;
     // Upper Stars
     for (int i = 1; i <= n; i++)
     {
@@ -23,11 +32,11 @@ int main()
     // Lower Stars
     for (int i = 1; i <= n; i++)
     {
-        for (int j = 1; j <= i; j++)
+        for (int j = 1; j <= i - 1; j++)
             cout << " ";
 
-        for (int j = 1; j <= n - i; j++)
-            if (j == 1 or j == n - i)
+        for (int j = 1; j <= n - i + 1; j++)
+            if (j == 1 or j == n - i + 1)
                 cout << "* ";
             else
                 cout << "  ";
