@@ -5,9 +5,8 @@ using namespace std;
 */
 int main()
 {
-    int n = 8;
-    if (cout << n)
-        cout << "HEllo";
+   int a=10;
+  cout<<(++a*a++);
     return 0;
 }
 /* OUTPUT
