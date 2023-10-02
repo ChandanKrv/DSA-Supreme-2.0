@@ -8,4 +8,4 @@ Q. 22 Numeric Star and Number Mixed Half Diamond
             4*5*6   
             2*3     
             1 
-
+Q. 23
