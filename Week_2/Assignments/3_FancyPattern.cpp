@@ -1,24 +1,35 @@
-#include <iostream> // Created by @ChandanKrV on 05 Oct, 2023.
+#include <iostream>
 using namespace std;
 /* PROBLEM:
 Fancy Pattern 3:
-
+    *
+    * 1 *
+    * 1 2 1 *
+    * 1 2 3 2 1 *
+    * 1 2 1 *
+    * 1 *
+    *
 */
 int main()
 {
-    int n = 6;
+    int n = 5;
+    cout << "*" << endl;
     for (int i = 0; i < n; i++)
     {
-        int c = 1;
-        for (int j = 0; j < i; j++)
+        // First Statement of ternary op. is for Growing Phase
+        int cond = i <= n / 2 ? 2 * i : 2 * (n - i - 1);
+        cout << "*"
+             << " ";
+        for (int j = 0; j <= cond; j++)
         {
-            cout << c;
-            if (j>=i)
-                c--;
+            if (j <= cond / 2)
+                cout << j + 1 << " ";
             else
-                c++;
+                cout << cond - j + 1 << " ";
         }
+        cout << "*";
         cout << endl;
     }
+    cout << "*";
     return 0;
 }

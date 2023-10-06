@@ -1,52 +1,35 @@
 #include <iostream> // Created by @ChandanKrV on 28 Sep, 2023.
 using namespace std;
 /* PROBLEM:
-Numeric Star and Number Mixed Half Diamond:
-
+Numeric Star and Number Mixed Half Diamond:Fancy Pattern 3
+    *
+    * 1 *
+    * 1 2 1 *
+    * 1 2 3 2 1 *
+    * 1 2 1 *
+    * 1 *
+    *
 */
 int main()
-{ // Not done
-    int n = 4, count;
-    for (int i = 1; i <= n; i++)
+{
+    int n = 5;
+    cout << "*" << endl;
+    for (int i = 0; i < n; i++)
     {
-        count = 1;
-        for (int j = 1; j <= 2 * i - 1; j++)
+        // First Statement of ternary op. is for Growing Phase
+        int cond = i <= n / 2 ? 2 * i : 2 * (n - i - 1);
+        cout << "*"
+             << " ";
+        for (int j = 0; j <= cond; j++)
         {
-            if ((j == 1) or ((j % 2 != 0) and (j == 2 * i - 1)))
-            {
-                cout << "*";
-            }
+            if (j <= cond / 2)
+                cout << j + 1 << " ";
             else
-            {
-                cout << count;
-                if (i <= j)
-                    count--;
-                else
-                    count++;
-            }
+                cout << cond - j + 1 << " ";
         }
+        cout << "*";
         cout << endl;
     }
-
-    for (int i = 1; i <= n; i++)
-    {
-        count = 1;
-        for (int j = 1; j <= n - i; j++)
-        {
-            if ((j == 1) or ((j % 2 != 0) and (j == n - i)))
-            {
-                cout << "*";
-            }
-            else
-            {
-                cout << count;
-                if (i == n - j)
-                    count--;
-                else
-                    count++;
-            }
-        }
-        cout << endl;
-    }
+    cout << "*";
     return 0;
 }
