@@ -6,11 +6,11 @@ Find Factorial of given number:
 int main()
 {
     int n = 5;
-    int fact = 1;
+    long long int fact = 1;
     for (int i = 1; i <= n; i++)
     {
         fact = fact * i;
     }
-    cout << fact;
+    cout << "Factorial of " << n << " is " << fact;
     return 0;
 }
