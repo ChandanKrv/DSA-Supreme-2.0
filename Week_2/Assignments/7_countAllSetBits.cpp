@@ -13,7 +13,7 @@ int countSetBitsUsingBitwise(int n)
         int bit = (n & 1);
         if (bit == 1)
             count++;
-        n = n >> 1;
+        n >>= 1; // OR  n = n >> 1;
     }
     return count;
 }
@@ -25,7 +25,7 @@ int countSetBits(int n)
     {
         if (n % 2 == 1)
             count++;
-        n = n / 2;
+        n /= 2;
     }
     return count;
 }
