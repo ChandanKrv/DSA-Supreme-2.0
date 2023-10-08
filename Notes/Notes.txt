@@ -1,0 +1,25 @@
+Notes:
+  N is any integer 
+Bitwise XOR:
+	If N is Odd:
+		N ^ 1 => N-1  (Decreased by 1)
+	If N is Even:
+		N ^ 1 => N+1  (Increased by 1)
+
+	XOR with 0:
+		N ^ 0 => N (No change)
+		N ^ N => 0 ( XOR operation between a number N and itself (N ^ N),
+			 the result will always be 0)
+			
+
+Bitwise AND:
+	 As we know bitwise AND Operation of a Number by 1 will be 1,
+  	  After AND operation with the number if we get 1 that means
+   	  number is Odd else Even.
+
+Bitwise OR:
+	If N is Odd:
+		N | 1 => N	 (No change)
+	If N is Even:
+		N | 1 => N+1 (Increased by 1)
+	
