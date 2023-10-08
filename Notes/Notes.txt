@@ -1,25 +1,71 @@
 Notes:
   N is any integer 
-Bitwise XOR:
+====================Bitwise==XOR===============================
 	If N is Odd:
 		N ^ 1 => N-1  (Decreased by 1)
 	If N is Even:
 		N ^ 1 => N+1  (Increased by 1)
+	e.g: 
+			Number = 7
+					7 in binary : 1 1 1
+					1 in binary : 0 0 1
+				   ---XOR---------------
+					6 in binary : 1 1 0
+				XOR with odd(7) decreased the number by 1
+
+			Number = 10
+					10 in binary : 1 0 1 0
+					1 in binary  : 0 0 0 1
+				   ---XOR------------------
+					11 in binary : 1 0 1 1
+				XOR with Even(11) increased the number by 1
 
 	XOR with 0:
 		N ^ 0 => N (No change)
 		N ^ N => 0 ( XOR operation between a number N and itself (N ^ N),
 			 the result will always be 0)
 			
-
-Bitwise AND:
+====================Bitwise==AND===============================
 	 As we know bitwise AND Operation of a Number by 1 will be 1,
   	  After AND operation with the number if we get 1 that means
    	  number is Odd else Even.
 
-Bitwise OR:
+====================Bitwise==OR===============================
 	If N is Odd:
 		N | 1 => N	 (No change)
 	If N is Even:
 		N | 1 => N+1 (Increased by 1)
-	
+	e.g:
+			Number = 7
+					7 in binary : 1 1 1
+					1 in binary : 0 0 1
+				-----OR-----------------
+					7 in binary : 1 1 1
+				OR with odd(7) value remain unchanged
+
+			Number = 10
+					10 in binary : 1 0 1 0
+					1 in binary  : 0 0 0 1
+				-----OR------------------
+					11 in binary : 1 0 1 1
+				OR with Even(11) increased the number by 1
+
+====================Left/Right==Shift============================
+    Number: 7 (Binary: 0111)
+        Operation       Result (Binary)   Result (Decimal)
+        ---------------------------------------------------
+        Initial Value   0111              7
+        Right Shift     0011              3
+        Left Shift      0110              6
+
+    Number: 10 (Binary: 1010)
+        Operation       Result (Binary)   Result (Decimal)
+        ---------------------------------------------------
+        Initial Value   1010              10
+        Right Shift     0101              5
+        Left Shift      1010              10
+
+In the case of 7 (an odd number), the value changes after the right and left shifts,
+while for 10 (an even number), the value remains the same.
+
+
