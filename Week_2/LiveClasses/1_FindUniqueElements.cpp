@@ -7,7 +7,7 @@ int main()
 {
     int arr[] = {10, 2, 11, 10, 2, 13, 15, 13, 15};
     int n = sizeof(arr) / sizeof(int);
-    int ans = 0;
+    int ans = 0; //No change in value if we do 0^N
     for (int i = 0; i < n; i++)
         ans = ans ^ arr[i];
 
