@@ -12,4 +12,6 @@ int main()
 		n = -n;
 	}
 	cout << n;
+
+	return 0;
 }
